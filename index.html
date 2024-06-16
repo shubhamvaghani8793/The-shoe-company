@@ -49,8 +49,12 @@
     </style>
 </head>
 
-<body class="bg-black text-white">
-
+<body class="bg-black text-white"  onload="myfun()">
+    <div class="fixed flex justify-center items-center h-full w-full bg-black loading">
+        <div class="animate-spin border-t-4 w-28 ml-8 h-28 border-white rounded-full  z-1">
+        </div>
+    </div>
+    
     <header
         class="px-6 md:px-12 flex items-center justify-between fixed w-full max-w-[1640px] left-[50%] -translate-x-[50%] bg-black/70 backdrop-blur-sm z-10">
         <a href="#">
@@ -188,6 +192,7 @@
     const hamburgericon = document.querySelector('.hamburger');
     const navbar = document.querySelector('.hamburger-Nav');
     const close = document.querySelector('.closeicon');
+    var preloader = document.querySelector('.loading');
 
     hamburgericon.addEventListener('click', () => {  
         hamburgericon.style.display = 'none';
@@ -198,6 +203,10 @@
         hamburgericon.style.display = 'block';
         navbar.classList.remove('showHamburger')
     })
+    
+    function myfun(){
+        preloader.style.display = 'none';
+    }
 
 </script>
 </html>
