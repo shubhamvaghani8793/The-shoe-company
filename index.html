@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>The Shoe Company </title>
     <style>
@@ -81,14 +82,14 @@
     <section id="home"
         class="bg-[url('img/background-road.png')] max-w-[1640px] mx-auto bg-cover md:bg-contain bg-no-repeat bg-right pt-36 px-8 md:px-12">
         <div class="flex md:flex-row flex-col md:items-center justify-between mx-auto max-w-[1280px]">
-            <h1 class="text-4xl md:text-7xl font-bold md:leading-[78px]">THE <br> SHOE <br> COMPANY</h1>
+            <h1 class="text-4xl md:text-7xl font-bold md:leading-[78px]" data-aos="fade-right">THE <br> SHOE <br> COMPANY</h1>
             <div>
                 <img class="w-full max-w-[520px] my-bounce" src="img/the-white-shoe-hero-image 1.png" alt="shoe-img">
             </div>
         </div>
     </section>
 
-    <section id="how-it-work" class="max-w-[1640px] mx-auto px-8 md:px-12 pt-32 -scroll-mt-12">
+    <section id="how-it-work" class="max-w-[1640px] mx-auto px-8 md:px-12 pt-32 mt-8 -scroll-mt-12"  data-aos="fade-right">
         <h1 class="text-center text-4xl font-bold max-w-lg mx-auto mb-8">Have they finally made the perfect workout shoe?</h1>
 
         <div class="max-w-xl mx-auto pt-60 xl:pt-16 relative">
@@ -114,7 +115,7 @@
         </div>
     </section>
 
-    <section id="about" class="max-w-[1640px] mx-auto px-8 md:px-12 mt-40 flex flex-col md:flex-row md:space-x-12 scroll-mt-28">
+    <section id="about" class="max-w-[1640px] mx-auto px-8 md:px-12 mt-40 flex flex-col md:flex-row md:space-x-12 scroll-mt-28" data-aos="fade-right">
         <h2 class="text-2xl my-4 text-center font-bold block md:hidden">About Us!</h2>
         <div class=" bg-[url('img/about-us-background.png')] bg-no-repeat md:w-full self-center"> 
             <img src="img/about-shoe-company.png" alt="aboutimg">
@@ -129,28 +130,28 @@
     </section>
 
     <section id="testimonials" class="max-w-[1640px] mx-auto px-8 md:px-12 pt-20 mt-8 bg-[url('img/miguel.png')] bg-no-repeat bg-cover scroll-mt-8">
-        <h2 class="text-3xl md:text-6xl font-bold text-center">What People are saying about THE SHOE COMPANY ?</h2>
-        <div class="flex flex-col md:flex-row items-center md:items-stretch justify-between mt-20 gap-24 max-w-6xl mx-auto pb-20">
-            <div class="w-60">
+        <h2 class="text-3xl md:text-6xl font-bold text-center" data-aos="fade-right">What People are saying about THE SHOE COMPANY ?</h2>
+        <div class="flex flex-col md:flex-row items-center md:items-stretch justify-between mt-20 gap-24 max-w-6xl mx-auto pb-20"  >
+            <div class="w-60" data-aos="fade-right">
                 <img class="w-full md:mb-8" src="img/Group 3.png" alt="person-1">
                 <p class="text-center ">“Looking for shoes that are built just for you? THE SHOE COMPANY is the way to go. Love the design and build quality.”</p>
             </div>
 
-            <div class="w-60">
+            <div class="w-60" data-aos="fade-right">
                 <img class="w-full md:mb-8" src="img/Group 4.png" alt="person-2">
                 <p class="text-center">“I love the shoes, the quality, and everyting. They are worth the investment!”</p>
             </div>
 
-            <div class="w-60">
+            <div class="w-60" data-aos="fade-right">
                 <img class="w-full md:mb-8" src="img/Group 5.png" alt="person-3">
                 <p class="text-center">“They make the best and forever lasting shoes. Superb fit and confort is literally the next level. Much recommended!”</p>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="max-w-[1640px] mx-auto px-8 md:px-12 mt-40 flex flex-col lg:flex-row items-center justify-between scroll-mt-12">
+    <section id="contact" class="max-w-[1640px] mx-auto px-8 md:px-12 mt-36 flex flex-col lg:flex-row items-center justify-between scroll-mt-12">
         <div class="lg:ml-20 shrink-0 self-start md:self-center">
-            <h2 class="text-2xl md:text-5xl font-bold">Contact Us</h2>   
+            <h2 class="text-2xl md:text-5xl font-bold"  data-aos="zoom-in-right" data-aos-duration="1000">Contact Us</h2>   
             <p class="max-w-[180px] my-8">THE SHOE COMPANY, Dallas, Texas, USA <br> +1 5590 1120 9910</p>
             
             <div class="flex space-x-2">
@@ -199,5 +200,14 @@
         navbar.classList.remove('showHamburger')
     })
 
+</script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({
+        offset: 300,
+        duration: 1000,
+        once: true
+    });
 </script>
 </html>
